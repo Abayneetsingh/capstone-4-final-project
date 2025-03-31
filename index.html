@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA APOD Viewer</title>
+    
+    
+   
+
+</head>
+<body>
+
+<div class="container">
+    <h1>NASA Picture of the Day (APOD)</h1>
+    <p>Select a date to view the NASA Astronomy Picture of the Day:</p>
+    
+    <input type="date" id="date-input" />
+    <button onclick="fetchAPOD()">Get Picture</button>
+    
+    <div id="apod-container" style="display: none;">
+        <h3>NASA APOD for <span id="selected-date"></span></h3>
+        <img id="apod-image" src="" alt="NASA Astronomy Picture of the Day" />
+        <p id="description"></p>
+    </div> 
+</div>
+
+<!-- Link to the external JavaScript file -->
+<script src="javascript.js"></script>
+
+</body>
+</html>
